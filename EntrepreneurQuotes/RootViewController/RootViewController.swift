@@ -13,12 +13,18 @@ class RootViewController: UIViewController {
     
     private let quotesTableViewSegue = "QuotesTableViewSegue"
     
+    // MARK: - IBOutlets
+    
     @IBOutlet private var quotesTableViewController: QuotesTableViewController!
     
+    // MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Entrepreneur Quotes"
     }
+    
+    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifer = segue.identifier else { return }
@@ -38,9 +44,11 @@ class RootViewController: UIViewController {
 
 
 
-
+#if DEBUG
 let quotes = [
     Quote(content: "The best way to predict the future is to create it.", author: "Peter Drucker")
 ]
+
+#endif
 
 

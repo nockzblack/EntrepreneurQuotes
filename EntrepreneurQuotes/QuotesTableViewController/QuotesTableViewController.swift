@@ -13,10 +13,11 @@ class QuotesTableViewController: UITableViewController {
     
     let defaultIdentifier = "QuoteTableViewCell"
     var quotes: [Quote] = []
+    
+    // MARK: - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = ""
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
