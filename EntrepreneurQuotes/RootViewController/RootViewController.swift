@@ -15,13 +15,10 @@ class RootViewController: UIViewController {
     
     @IBOutlet private var quotesTableViewController: QuotesTableViewController!
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "Entrepreneur Quotes"
     }
-    
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let identifer = segue.identifier else { return }
@@ -32,7 +29,6 @@ class RootViewController: UIViewController {
                     }
                     self.quotesTableViewController = destination
                     self.quotesTableViewController.quotes = quotes
-                    
                     
                 default:
                     break
