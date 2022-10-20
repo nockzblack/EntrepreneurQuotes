@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		C110AA212900C6CD00CBFB9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA202900C6CD00CBFB9A /* AppDelegate.swift */; };
 		C110AA232900C6CD00CBFB9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA222900C6CD00CBFB9A /* SceneDelegate.swift */; };
-		C110AA252900C6CD00CBFB9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA242900C6CD00CBFB9A /* ViewController.swift */; };
+		C110AA252900C6CD00CBFB9A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA242900C6CD00CBFB9A /* RootViewController.swift */; };
 		C110AA282900C6CD00CBFB9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C110AA262900C6CD00CBFB9A /* Main.storyboard */; };
 		C110AA2A2900C6CE00CBFB9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C110AA292900C6CE00CBFB9A /* Assets.xcassets */; };
 		C110AA2D2900C6CE00CBFB9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C110AA2B2900C6CE00CBFB9A /* LaunchScreen.storyboard */; };
+		C110AA372900CB5600CBFB9A /* QuotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA362900CB5600CBFB9A /* QuotesTableViewController.swift */; };
+		C110AA3E2900CDD600CBFB9A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110AA3D2900CDD600CBFB9A /* Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C110AA1D2900C6CD00CBFB9A /* EntrepreneurQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EntrepreneurQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C110AA202900C6CD00CBFB9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C110AA222900C6CD00CBFB9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C110AA242900C6CD00CBFB9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C110AA242900C6CD00CBFB9A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C110AA272900C6CD00CBFB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C110AA292900C6CE00CBFB9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C110AA2C2900C6CE00CBFB9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C110AA2E2900C6CE00CBFB9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C110AA362900CB5600CBFB9A /* QuotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesTableViewController.swift; sourceTree = "<group>"; };
+		C110AA3D2900CDD600CBFB9A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		C110AA1F2900C6CD00CBFB9A /* EntrepreneurQuotes */ = {
 			isa = PBXGroup;
 			children = (
-				C110AA202900C6CD00CBFB9A /* AppDelegate.swift */,
-				C110AA222900C6CD00CBFB9A /* SceneDelegate.swift */,
-				C110AA242900C6CD00CBFB9A /* ViewController.swift */,
-				C110AA262900C6CD00CBFB9A /* Main.storyboard */,
-				C110AA292900C6CE00CBFB9A /* Assets.xcassets */,
-				C110AA2B2900C6CE00CBFB9A /* LaunchScreen.storyboard */,
-				C110AA2E2900C6CE00CBFB9A /* Info.plist */,
+				C110AA3C2900CDCC00CBFB9A /* Models */,
+				C110AA342900CB2900CBFB9A /* RootViewController */,
+				C110AA352900CB3500CBFB9A /* QuotesTableViewController */,
+				C110AA382900CCD000CBFB9A /* Storyboards */,
+				C110AA3B2900CCFA00CBFB9A /* Supporting Files */,
+				C110AA3A2900CCF100CBFB9A /* Resources */,
+				C110AA392900CCE500CBFB9A /* Delegates */,
 			);
 			path = EntrepreneurQuotes;
+			sourceTree = "<group>";
+		};
+		C110AA342900CB2900CBFB9A /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA242900C6CD00CBFB9A /* RootViewController.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		C110AA352900CB3500CBFB9A /* QuotesTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA362900CB5600CBFB9A /* QuotesTableViewController.swift */,
+			);
+			path = QuotesTableViewController;
+			sourceTree = "<group>";
+		};
+		C110AA382900CCD000CBFB9A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA262900C6CD00CBFB9A /* Main.storyboard */,
+				C110AA2B2900C6CE00CBFB9A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C110AA392900CCE500CBFB9A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA202900C6CD00CBFB9A /* AppDelegate.swift */,
+				C110AA222900C6CD00CBFB9A /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		C110AA3A2900CCF100CBFB9A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA292900C6CE00CBFB9A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C110AA3B2900CCFA00CBFB9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA2E2900C6CE00CBFB9A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C110AA3C2900CDCC00CBFB9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C110AA3D2900CDD600CBFB9A /* Quote.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C110AA252900C6CD00CBFB9A /* ViewController.swift in Sources */,
+				C110AA3E2900CDD600CBFB9A /* Quote.swift in Sources */,
+				C110AA252900C6CD00CBFB9A /* RootViewController.swift in Sources */,
 				C110AA212900C6CD00CBFB9A /* AppDelegate.swift in Sources */,
+				C110AA372900CB5600CBFB9A /* QuotesTableViewController.swift in Sources */,
 				C110AA232900C6CD00CBFB9A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4FT83F7673;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EntrepreneurQuotes/Info.plist;
+				INFOPLIST_FILE = "EntrepreneurQuotes/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +381,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4FT83F7673;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = EntrepreneurQuotes/Info.plist;
+				INFOPLIST_FILE = "EntrepreneurQuotes/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
